@@ -7,28 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div style="display: flex; align-items: center;">
-            <div class="row">
-                <div>
-                <h1> Salut, je suis Dasteen Front End Developpeur  </h1>
-                <h4> Je realise les interfaces graphique web et mobile.</h4>
-                <h4> Ecrivez moi en dessous et nous pourrons travailler ensemble</h4>
-                <form action="acceuil.html" method="POST">
-                   
-                    <input type="email" id="email" name="email" placeholder="Entrez votre e-mail">
-                    <a href="accueil.html" class="btn">S'abonner</a>
-                </form>
-                </div>
-                <img src="img/Project0.png" alt="Projet 4" width="650 px", height="350px">
+    <div class="row">
+        <div >
+        <h1 class="custom-heading"> Salut, je suis Dasteen Front End Developpeur  </h1>
+        <h4> <span class="difficile-a-lire"> Je realise les interfaces graphique web et mobile. 
+        Ecrivez moi en dessous et nous pourrons travailler ensemble</h4></span>
+        <form action="accueil.php" method="post">
+            <div class="input-group">
+                <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+                <button type="submit">Envoyer</button>
             </div>
-       
+        </form>
         </div>
-        
-        <div class="gallery">
-            <h1 style="text-align: center;">Projets Réalisés</h1>
-        </div>
-        
-    </div>  
+        <img src="img/Project0.png" alt="Projet 4" width="650 px", height="350px">
+    </div>
 </body>
 </html>
