@@ -106,7 +106,7 @@ nav ul li a:hover {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: indigo;
+    background-color: #5B21B6;
     color: #fff;
     text-decoration: none;
     border: none;
@@ -114,7 +114,7 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-    background-color: blue;
+    background-color: #5B21B6;
 }
 
 .explore {
