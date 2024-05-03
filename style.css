@@ -191,14 +191,14 @@ footer {
 }
 
 input[type="email"] {
-    padding: 10px; 
+    padding: 17px; 
     border: 1px solid #ccc;
     border-radius: 5px;
    height: 20px;
    width: 500px;
 }
 .nom::after {
-    content: "en";
+    content: "la";
     color: blue;
 }
 
@@ -222,6 +222,7 @@ input[type="email"] {
 .input-container input {
     padding-left: 30px; 
     width: 450px;
+    
 }
 
 .input-container .icon {
@@ -230,6 +231,7 @@ input[type="email"] {
     top: 50%;
     transform: translateY(-50%);
     color: #555; 
+    padding: 5px 5px 5px 10px;
 }
 
 form {
@@ -245,10 +247,11 @@ form {
 }
 
 .input-container input {
-    width: 96%; 
+    width: 95%; 
 }
 
 .btn {
     flex-shrink: 0; 
 }
+
 
