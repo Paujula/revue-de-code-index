@@ -1,59 +1,345 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
-    <link rel="stylesheet" href="style.css">
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-</head>
-<body style="background-color: whitesmoke; ">
-  <div class="container1">
+.custom {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
 
-    <div class="section">
-      <h2 class="nom">Daste</h2>
-      <ul class="dasteen-list"> 
-        <li><a href="accueil.html" class="btne"><img src="img/Project17.png" alt="Project 17"></a></li>
-        <li><a href="accueil.html" class="btne"><img src="img/Project18.jpg" alt="Project 18"></a></li>
-        <li><a href="accueil.html" class="btne"><img src="img/Project19.png" alt="Project 19"></a></li>
-        <li><a href="accueil.html" class="btne"><img src="img/Project20.jpg" alt="Project 20"></a></li>
-      </ul>
-    </div>
-    <div class="section">
-      <h2>Service</h2>
-      <ul>
-        <li><a href="accueil.html" class="btne">Dev web</a></li>
-        <li><a href="accueil.html" class="btne">Web Master</a></li>
-        <li><a href="accueil.html" class="btne">Design</a></li>
-        <li><a href="accueil.html" class="btne">Conception de Logo</a></li>
-      </ul>
-    </div>
-    <div class="section">
-      <h2>Page</h2>
-      <ul >
-        <li><a href="accueil.html" class="btne">Acceuil</a></li>
-        <li><a href="accueil.html" class="btne">Services</a></li>
-        <li><a href="accueil.html" class="btne">Projets</a></li>
-        <li><a href="accueil.html" class="btne">Pricing</a></li>
-        <li><a href="accueil.html" class="btne">Faire un Devis</a></li>
-      </ul>
-    </div>
-    <div class="section">
-      <h2>Support</h2>
-      <ul>
-        <li><a href="accueil.html" class="btne">Contact</a></li>
-        <li><a href="accueil.html" class="btne">Email</a></li>
-        <li><a href="accueil.html" class="btne">LinkedIn</a></li>
-        <li><a href="accueil.html" class="btne">Facebook</a></li>
-        <li><a href="accueil.html" class="btne">Youtube</a></li>
-      </ul>
-    </div>
-  </div>
+header {
+  color: black;
+  display: flex;
+  justify-content: flex-end; 
+  padding: 20px;
+}
 
-      <h4 style="text-align: center; background-color: whitesmoke; ">© 2023 Tous droits reservés | Réalisé parAGOSSOU BODE Paujula</h4>
+header nav ul li a {
+  color: black;
+}
 
-  
+header nav ul li a:hover {
+  color: blue; 
+}
 
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; 
+}
 
-</body>
-</html>
+nav ul li {
+  display: inline;
+  margin-left: 20px; 
+}
+
+nav ul li:first-child {
+  margin-left: 0; 
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  transition: border-color 0.3s; 
+}
+
+nav ul li a:hover {
+  border-bottom-color: #B089F4; 
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.custom-heading {
+  font-size: 3.25rem; 
+  font-weight: bold;
+}
+
+.difficile-a-lire {
+  font-weight: lighter; 
+  color: #999; 
+  font-size: 19px;
+}
+
+.difficile { 
+  font-size: 14px;
+}
+
+.project {
+  width: 290px ;
+  margin-right: 20px;
+  justify-content: flex-start;
+}
+
+.project img {
+  width: 100%;
+  height: 110%;
+  max-height: 330px;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #B089F4;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #B089F4;
+}
+
+.explore {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.explore .btn {
+  background-color: #5B21B6;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.explore .btn:hover {
+  background-color:  #B089F4;
+}
+
+.explore .btn span {
+  margin-left: 5px;
+}
+
+.exemple {
+  text-align: center;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: whitesmoke; 
+  padding: 5px;   
+}
+
+.section {
+  margin-right: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+ul.dasteen-list {
+  display: flex;
+}
+
+ul.dasteen-list li {
+  margin-right: 10px; 
+  padding: 2px;
+}
+
+ul.dasteen-list li img {
+  max-width: 25px; 
+  max-height: 25px;
+}
+
+footer {
+  background-color: whitesmoke; 
+  padding: 20px;
+  text-align: center;
+}
+
+input[type="email"] {
+  padding: 17px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 20px;
+  width: 500px;
+}
+
+.nom::after {
+  content: "la";
+  color: blue;
+}
+
+.btne {
+  display: inline-block;
+  padding: 1px 5px;
+  color: black;
+  text-decoration: none;
+}
+
+.btne:hover {
+  color: blue;
+}
+
+.input-container {
+  position: relative;
+  display: inline-block; 
+}
+
+.input-container input {
+  padding-left: 30px; 
+  width: 450px;
+  padding: 5px 5px 5px 39px;
+}
+
+.input-container .icon {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #555; 
+  padding: 2px 5px 5px 10px;
+}
+
+form {
+  display: flex;
+  text-align: center;
+}
+
+.input-container {
+  position: relative;
+  flex: 1; 
+  margin-right: 10px; 
+}
+
+.input-container input {
+  width: 96%; 
+  height: 35px;
+}
+
+.btn {
+  flex-shrink: 0; 
+  width: 120px;
+  height: 44px;
+}
+
+.espace {
+  padding: 5px 5px 5px 15px;
+}
+
+.abonner {
+  width: 450px;
+}
+
+.sectionne {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-image: url('img/po22.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 600px;
+}
+
+.custom-heading {
+  font-size: 2.5rem; 
+  font-weight: bold;
+}
+
+.diese {
+  color: blue;
+  font-size: 3.25rem; 
+  font-weight: bold;
+}
+
+.section2 {
+  text-align: center;
+  display: flex;
+  margin-right: 50px;
+}
+
+.separer {
+  display: flex;
+  padding: 0px 0px 0px 600px;
+}
+
+.inpute-container input {
+  width: 76%; 
+  height: 35px;
+}
+
+@media screen and (max-width: 1024px) {
+  .custom, .container1, .row, .gallery .row {
+      flex-direction: column;
+      align-items: center;
+  }
+  .container1{
+      align-items: center;
+      flex-direction: column;
+
+  }
+  .row {
+      margin-bottom: 10px; 
+  }
+
+  .input-container {
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+  }
+
+  .input-container input[type="email"] {
+      width: 100%;
+  }
+
+  .container1 .section {
+      margin-right: 0;
+      margin-bottom: 10px;
+      flex-direction: column;
+  }
+
+  .footer {
+      padding: 10px;
+  }
+
+  .project {
+      width: 100%;
+      margin-right: 0;
+      
+  }
+
+  .project img {
+      margin-bottom: 5px; 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .input-container input[type="email"] {
+      width: 90%;
+  }
+
+ 
+}

@@ -6,49 +6,49 @@ body {
 
 .custom {
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
+    justify-content: space-between;
+    align-items: center;
 }
 
 header {
     color: black;
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
     padding: 20px;
-    
 }
+
 header nav ul li a {
     color: black;
-  }
-  
-  header nav ul li a:hover {
-    color: blue; 
-  }
+}
+
+header nav ul li a:hover {
+    color: blue;
+}
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex; 
+    display: flex;
 }
 
 nav ul li {
     display: inline;
-    margin-left: 20px; 
+    margin-left: 20px;
 }
 
 nav ul li:first-child {
-    margin-left: 0; 
+    margin-left: 0;
 }
 
 nav ul li a {
     color: black;
     text-decoration: none;
-    transition: border-color 0.3s; 
+    transition: border-color 0.3s;
 }
 
 nav ul li a:hover {
-    border-bottom-color: #B089F4; 
+    border-bottom-color: #B089F4;
 }
 
 .container {
@@ -71,26 +71,24 @@ nav ul li a:hover {
 }
 
 .custom-heading {
-    font-size: 3.25rem; 
+    font-size: 3.25rem;
     font-weight: bold;
 }
 
 .difficile-a-lire {
-    font-weight: lighter; 
-    color: #999; 
+    font-weight: lighter;
+    color: #999;
     font-size: 19px;
 }
 
-.difficile { 
+.difficile {
     font-size: 14px;
 }
 
 .project {
-    width: 290px ;
-    
+    width: 290px;
     margin-right: 20px;
     justify-content: flex-start;
-   
 }
 
 .project img {
@@ -99,11 +97,6 @@ nav ul li a:hover {
     max-height: 330px;
     border-radius: 15px;
     padding: 10px;
-   
-}
-
-.project h2 {
-    margin-top: 10px;
 }
 
 .btn {
@@ -134,10 +127,7 @@ nav ul li a:hover {
 }
 
 .explore .btn:hover {
-    background-color:  #B089F4;
-}
-.btn:hover {
-    background-color: #5B21B6;
+    background-color: #B089F4;
 }
 
 .explore .btn span {
@@ -149,16 +139,15 @@ nav ul li a:hover {
 }
 
 .container1 {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        background-color: whitesmoke; 
-        padding: 5px;   
-    }
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    padding: 5px;
+}
 
 .section {
     margin-right: 20px;
-   
 }
 
 ul {
@@ -175,28 +164,29 @@ ul.dasteen-list {
 }
 
 ul.dasteen-list li {
-    margin-right: 10px; 
-     padding: 2px;
+    margin-right: 10px;
+    padding: 2px;
 }
 
 ul.dasteen-list li img {
-    max-width: 25px; 
+    max-width: 25px;
     max-height: 25px;
 }
 
 footer {
-    background-color: whitesmoke; 
+    background-color: whitesmoke;
     padding: 20px;
     text-align: center;
 }
 
 input[type="email"] {
-    padding: 17px; 
+    padding: 17px;
     border: 1px solid #ccc;
     border-radius: 5px;
-   height: 20px;
-   width: 500px;
+    height: 20px;
+    width: 500px;
 }
+
 .nom::after {
     content: "la";
     color: blue;
@@ -207,7 +197,6 @@ input[type="email"] {
     padding: 1px 5px;
     color: black;
     text-decoration: none;
-   
 }
 
 .btne:hover {
@@ -216,13 +205,13 @@ input[type="email"] {
 
 .input-container {
     position: relative;
-    display: inline-block; 
+    display: inline-block;
 }
 
 .input-container input {
-    padding-left: 30px; 
+    padding-left: 30px;
     width: 450px;
-    
+    padding: 5px 5px 5px 39px;
 }
 
 .input-container .icon {
@@ -230,28 +219,178 @@ input[type="email"] {
     left: 5px;
     top: 50%;
     transform: translateY(-50%);
-    color: #555; 
-    padding: 5px 5px 5px 10px;
+    color: #555;
+    padding: 2px 5px 5px 10px;
 }
 
 form {
     display: flex;
     text-align: center;
-    
 }
 
 .input-container {
     position: relative;
-    flex: 1; 
-    margin-right: 10px; 
+    flex: 1;
+    margin-right: 10px;
 }
 
 .input-container input {
-    width: 95%; 
+    width: 96%;
+    height: 35px;
 }
 
 .btn {
-    flex-shrink: 0; 
+    flex-shrink: 0;
+    width: 120px;
+    height: 44px;
 }
 
+.espace {
+    padding: 5px 5px 5px 15px;
+}
 
+.abonner {
+    width: 450px;
+}
+
+.sectionne {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-image: url('img/po22.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 600px;
+}
+
+.custom-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.diese {
+    color: blue;
+    font-size: 3.25rem;
+    font-weight: bold;
+}
+
+.section2 {
+    text-align: center;
+    display: flex;
+    margin-right: 50px;
+}
+
+.separer {
+    display: flex;
+    padding: 0px 0px 0px 600px;
+}
+
+.inpute-container input {
+    width: 76%;
+    height: 35px;
+}
+
+#check {
+    display: none;
+}
+
+#checkbt {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .custom,
+    .container1,
+    .row,
+    .gallery .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container1 {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .row {
+        margin-bottom: 10px;
+    }
+
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-container input[type="email"] {
+        width: 100%;
+    }
+
+    .container1 .section {
+        margin-right: 0;
+        margin-bottom: 10px;
+        flex-direction: column;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+
+    .project {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .project img {
+        margin-bottom: 5px;
+    }
+
+    .nav ul li a {
+        position: relative;
+        bottom: 64px;
+        font-size: 16px;
+    }
+
+    #check {
+        display: none;
+    }
+
+    #checkbt {
+        display: block;
+        cursor: pointer;
+    }
+
+    #checkbt img {
+        display: block;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        right: 20px;
+        top: 20px;
+    }
+
+    nav ul li {
+        display: none;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+    
+    .custom {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .custom h3 {
+        margin-right: auto;
+    }
+
+    #checkbt {
+        display: block;
+        cursor: pointer;
+        margin-left: auto;
+    }
+}
