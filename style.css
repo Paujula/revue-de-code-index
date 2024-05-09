@@ -137,6 +137,10 @@ nav ul li a:hover {
 .exemple {
     text-align: center;
 }
+.burger-menu{
+    display: none;
+}
+
 
 .container1 {
     display: flex;
@@ -171,6 +175,10 @@ ul.dasteen-list li {
 ul.dasteen-list li img {
     max-width: 25px;
     max-height: 25px;
+}
+
+.burger-menu{
+    display: none;
 }
 
 footer {
@@ -299,6 +307,7 @@ form {
     display: none;
 }
 
+
 @media screen and (max-width: 1024px) {
     .custom,
     .container1,
@@ -308,9 +317,15 @@ form {
         align-items: center;
     }
 
+    .burger-menu,.custom.h3{
+        display: flex;
+    }
+
     .container1 {
         align-items: center;
         flex-direction: column;
+        padding: 15px;
+        text-align: center;
     }
 
     .row {
@@ -323,8 +338,18 @@ form {
         align-items: center;
     }
 
+    .input-container input[type="email"],
+    .btn,
+    .abonner,
+    .envoyer {
+        width: 88%; 
+        height: 44px; 
+        font-size: 16px; 
+        margin-bottom: 20px; 
+    }
+
     .input-container input[type="email"] {
-        width: 100%;
+        max-width: 100%;
     }
 
     .container1 .section {
@@ -333,6 +358,7 @@ form {
         flex-direction: column;
     }
 
+  
     .footer {
         padding: 10px;
     }
@@ -346,12 +372,15 @@ form {
         margin-bottom: 5px;
     }
 
+    
+
     .nav ul li a {
         position: relative;
         bottom: 64px;
         font-size: 16px;
     }
 
+    
     #check {
         display: none;
     }
@@ -377,20 +406,87 @@ form {
     nav ul li a {
         font-size: 20px;
     }
+
+    .custom-heading {
+        font-size: 2rem; 
+    }
+
+    .difficile-a-lire {
+        font-size: 16px; 
+    }
+
+    .difficile {
+        font-size: 12px; 
+    }
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .input-container input[type="email"],
+    .btn {
+        width: 70%; 
+        height: 44px;
+        font-size: 16px; 
+        margin-bottom: 10px; 
+    }
+
+    .input-container input[type="email"] {
+        max-width: 100%; 
+    }
+
     
+    .row {
+        flex-direction: column;
+    }
+
+    .row > * {
+        width: 100%;
+    }
+
+    .row > img {
+        margin-top: 20px; 
+    }
+
     .custom {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
 
-    .custom h3 {
-        margin-right: auto;
+    .burger-menu {
+        display: flex;
+        align-items: center;
     }
 
-    #checkbt {
-        display: block;
-        cursor: pointer;
-        margin-left: auto;
+    header {
+        width: 70%; 
     }
+
+    .custom h3 {
+        margin-left: 10px;
+    }
+    
 }
+
+@media screen and (min-width: 992px) {
+ 
+    .custom-heading {
+        font-size: 2.5rem; 
+    }
+
+    .difficile-a-lire {
+        font-size: 19px; 
+    }
+
+    .difficile {
+        font-size: 14px;
+    }
+    .row > img {
+        margin-top: 0;
+    }
+    
+}
+
+
