@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porfolio Paujula</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <link rel="stylesheet" href="https:cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -50,7 +51,8 @@
                 </form>
                 
                 </div>
-                <img src="img/Project0.png" alt="Projet 4" width="650 px", height="350px">
+                
+                <img src="img/Project0.png" alt="Projet 4" class="correct">
             </div>
        
         </div>
@@ -86,7 +88,7 @@
                         <a href="accueil.html" class="btn">Voir le projet</a>
                     </div>
                 </div>
-            </div><br><br><br><br><br><br><br><br>
+            </div>
             <div class="row">
                 <div class="project">
                     <img src="img/project5.png" alt="Projet 5">
@@ -116,7 +118,7 @@
                         <a href="accueil.html" class="btn">Voir le projet</a>
                     </div>
                 </div>
-            </div><br><br><br><br><br><br>
+            </div>
             <div class="row">
                 <div class="project">
                     <img src="img/project9.png" alt="Projet 9">
@@ -146,7 +148,7 @@
                         <a href="accueil.html" class="btn">Voir le projet</a>
                     </div>
                 </div>
-            </div><br><br><br><br><br><br><br><br>
+            </div>
             <div class="row">
                 <div class="project">
                     <img src="img/project13.png" alt="Projet 13">
@@ -176,30 +178,29 @@
                         <a href="accueil.html" class="btn">Voir le projet</a>
                     </div>
                 </div>
-            </div><br><br><br><br><br><br>
+            </div>
         </div>
     </div>
     <div class="explore">
         <a href="accueil.html" class="btn">Explorer plus <span>&rarr;</span></a>
-    </div><br><br><br><br><br><br>
+    </div>
     <div class="exemple" >
-        <h1>Abonnez vous a notre newsletter</h1>
-        <h3 style="font-size: 30px;"><span class="difficile-a-lire">Restez informer des dernieres modification, des derniers articles sur notre site. <br>
+        <h1 class="custom-heading">Abonnez vous a notre newsletter</h1>
+        <h3 style="font-size: 30px;"><span class="lire">Restez informer des dernieres modification, des derniers articles sur notre site. <br>
         l'abonnement est gratuit. Vous avez juste qu'a mettre votre email ici</span></h3>
     
         
         <div class="input-container">
-            <div class="abonner">
+            <div>
                 <input type="email" id="email" name="email" placeholder="Entrez votre e-mail" required><br>
                 <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
             </div>
         </div>
         <button type="submit" class="btn">S'abonner</button>
-        
-        <h6><span class="difficile-a-lire" style="font-size: 15px;"> Nous portons une attention particuliere a le protection de vos donnees.</span><a href="accueil.html" style="color: blue; font-size: 15px;text-decoration: none;">Privacy Policy.</a> </h6>
+        <h6><span class="exemple-lire"> Nous portons une attention particuliere a le protection de vos donnees.</span><a href="accueil.html" style="color: blue; font-size: 15px;text-decoration: none;">Privacy Policy.</a> </h6>
 
      </div>
-
+     <div class="changer">
      <div class="container1">
 
         <div class="section">
@@ -243,20 +244,9 @@
       </div>
 
       <footer>
-      <h4 style="text-align: center; font-size: 10px; "> <span class="difficile"> © 2024 Tous droits reservés | Réalisé par AGOSSOU BODE Paujula</span></h4>
+      <h4 style="text-align: center; font-size: 10px;"> <span class="difficile"> © 2024 Tous droits reservés | Réalisé par AGOSSOU BODE Paujula</span></h4>
      </footer>
-
-     <script>
-        function toggleMenu() {
-        var menu = document.getElementById('menu');
-        if (menu.style.display === 'none' || menu.style.display === '') {
-            menu.style.display = 'block';
-        } else {
-            menu.style.display = 'none';
-        }
-    }
-
-     </script>
+    </div>
 </body>
 </html>
 

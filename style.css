@@ -67,7 +67,7 @@ nav ul li a:hover {
 .row {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 150px;
 }
 
 .custom-heading {
@@ -79,6 +79,19 @@ nav ul li a:hover {
     font-weight: lighter;
     color: #999;
     font-size: 19px;
+}
+
+.lire {
+    font-weight: lighter;
+    color: #999;
+    font-size: 19px;
+  
+}
+.exemple-lire{
+    font-weight: lighter;
+    color: #999;
+    font-size: 14px;
+  
 }
 
 .difficile {
@@ -137,10 +150,10 @@ nav ul li a:hover {
 .exemple {
     text-align: center;
 }
-.burger-menu{
+
+.burger-menu {
     display: none;
 }
-
 
 .container1 {
     display: flex;
@@ -176,13 +189,12 @@ ul.dasteen-list li img {
     max-width: 25px;
     max-height: 25px;
 }
-
-.burger-menu{
-    display: none;
-}
-
-footer {
+ .changer{
     background-color: whitesmoke;
+
+ }
+.footer {
+  
     padding: 20px;
     text-align: center;
 }
@@ -308,6 +320,11 @@ form {
 }
 
 
+.correct{
+    width: 650px;
+     height: 350px; 
+}
+
 
 @media (min-width: 220px) and (max-width: 480px) {
     .custom,
@@ -318,62 +335,107 @@ form {
         align-items: center;
     }
 
+    .exemple .icon { 
+        margin-top: -8px;
+    }
+
+    .row .icon { 
+        margin-top: -8px;
+    }
+
     .burger-menu,.custom.h3{
         display: flex;
+       
     }
+
+    .explore .btn {
+        font-size: 12px; 
+        width: 150px;
+        padding: 20px 20px 0px 0px;
+
+    }
+
+    .exemple.icon{
+        padding: 10px 0px 0px 0px;
+
+    }
+
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .abonner {
+        flex-direction: column;
+        align-items: center;
+    }
+  
 
     .container1 {
         align-items: center;
         flex-direction: column;
         padding: 15px;
         text-align: center;
+        justify-content: flex-start;
+        padding: 0px 40px 0px 0px;
     }
 
     .row {
-        margin-bottom: 10px;
+        margin-bottom: 5px;
+        
     }
 
-    .input-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .exemple{
+       font-size:8px;
+       margin: 0;
+       padding: 0px 60px 0px 0px;
+       
+
+    }
+    
+    .lire {
+        font-weight: lighter;
+        color: #999;
+        font-size: 10px;
+      
     }
 
-    .input-container input[type="email"],
-    .btn,
-    .abonner,
-    .envoyer {
-        width: 88%; 
-        height: 44px; 
-        font-size: 16px; 
-        margin-bottom: 20px; 
-    }
-
-    .input-container input[type="email"] {
-        max-width: 100%;
+    .exemple-lire{
+        font-weight: lighter;
+        color: #999;
+        font-size: 10px;
+      
     }
 
     .container1 .section {
         margin-right: 0;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         flex-direction: column;
+        font-size: 12px;
     }
 
   
     .footer {
         padding: 10px;
+        font-size: 2px;
     }
 
     .project {
         width: 100%;
         margin-right: 0;
+        justify-content: flex-start;
+        padding: 0px 40px 0px 0px;
+        
     }
-
+    
+    .correct{
+        width: 650px;
+         height: 120px; 
+    }
+    
     .project img {
         margin-bottom: 5px;
     }
-
-    
 
     .nav ul li a {
         position: relative;
@@ -409,37 +471,23 @@ form {
     }
 
     .custom-heading {
-        font-size: 2rem; 
+        font-size: 1.50rem; 
+        font-size: 25px; 
+
     }
 
     .difficile-a-lire {
-        font-size: 16px; 
+        font-size: 11px; 
+        margin-bottom: O;
     }
 
     .difficile {
-        font-size: 12px; 
+        font-size: 10px; 
     }
-    .input-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-    }
-
-    .input-container input[type="email"],
-    .btn {
-        width: 70%; 
-        height: 44px;
-        font-size: 16px; 
-        margin-bottom: 10px; 
-    }
-
-    .input-container input[type="email"] {
-        max-width: 100%; 
-    }
-
-    
+      
     .row {
         flex-direction: column;
+        margin: 0;
     }
 
     .row > * {
@@ -447,7 +495,7 @@ form {
     }
 
     .row > img {
-        margin-top: 20px; 
+        margin-top: 10px; 
     }
 
     .custom {
@@ -468,9 +516,23 @@ form {
     .custom h3 {
         margin-left: 10px;
     }
+    .custom img{
+        width: 50%;
+    }  
 
-    
-    
+    .icon{
+        display: block;
+    }
+
+    .input-container input[type="email"],
+    .btn {
+        width: 80%; 
+        height: 30px;
+        font-size: 12px; 
+        margin-bottom: 20px; 
+    }
+  
+  
 }
 
 @media (min-width: 480px) and (max-width: 734px) {
@@ -634,6 +696,7 @@ form {
     }
     
 }
+
 
 @media (min-width: 734px) and (max-width:1024px) {
     .custom,
