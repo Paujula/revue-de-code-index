@@ -325,14 +325,22 @@ form {
      height: 350px; 
 }
 
+#menu.active {
+    display: block;
+}
+ 
 
-@media (min-width: 220px) and (max-width: 480px) {
+@media screen and (min-width: 220px) and (max-width: 480px) {
     .custom,
     .container1,
     .row,
     .gallery .row {
         flex-direction: column;
         align-items: center;
+    }
+
+    .espace.btn{
+        padding: 10px 15px;
     }
 
     .exemple .icon { 
@@ -531,11 +539,10 @@ form {
         font-size: 12px; 
         margin-bottom: 20px; 
     }
-  
-  
+     
 }
 
-@media (min-width: 480px) and (max-width: 734px) {
+@media screen and (min-width: 480px) and (max-width: 734px) {
     .custom,
     .container1,
     .row,
@@ -544,62 +551,115 @@ form {
         align-items: center;
     }
 
+    .exemple .icon { 
+        margin-top: -8px;
+    }
+
+    .row .icon { 
+        margin-top: -8px;
+    }
+
+ 
     .burger-menu,.custom.h3{
         display: flex;
+       
     }
+
+    .explore .btn {
+        font-size: 12px; 
+        width: 150px;
+        padding: 20px 20px 0px 0px;
+
+    }
+
+    .gallery .btn {
+        font-size: 12px; 
+        width: 150px;
+        padding: 20px 0px 0px 0px;
+
+    }
+
+    .exemple.icon{
+        padding: 10px 0px 0px 0px;
+
+    }
+
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .abonner {
+        flex-direction: column;
+        align-items: center;
+    }
+  
 
     .container1 {
         align-items: center;
         flex-direction: column;
         padding: 15px;
         text-align: center;
+        
+        
     }
 
     .row {
-        margin-bottom: 10px;
+        margin-bottom: 5px;
+        
     }
 
-    .input-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .exemple{
+       font-size:8px;
+       margin: 0;
+       padding: 0px 60px 0px 0px;
+       
+
+    }
+    
+    .lire {
+        font-weight: lighter;
+        color: #999;
+        font-size: 10px;
+      
     }
 
-    .input-container input[type="email"],
-    .btn,
-    .abonner,
-    .envoyer {
-        width: 88%; 
-        height: 44px; 
-        font-size: 16px; 
-        margin-bottom: 20px; 
-    }
-
-    .input-container input[type="email"] {
-        max-width: 100%;
+    .exemple-lire{
+        font-weight: lighter;
+        color: #999;
+        font-size: 10px;
+      
     }
 
     .container1 .section {
         margin-right: 0;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         flex-direction: column;
+        font-size: 12px;
     }
 
   
     .footer {
         padding: 10px;
+        font-size: 2px;
     }
 
     .project {
         width: 100%;
         margin-right: 0;
-    }
+    
 
+        
+    }
+    
+    .correct{
+        width: 900px;
+         height: 280px; 
+    }
+    
     .project img {
         margin-bottom: 5px;
     }
-
-    
 
     .nav ul li a {
         position: relative;
@@ -635,37 +695,23 @@ form {
     }
 
     .custom-heading {
-        font-size: 2rem; 
+        font-size: 1.50rem; 
+        font-size: 25px; 
+
     }
 
     .difficile-a-lire {
-        font-size: 16px; 
+        font-size: 11px; 
+        margin-bottom: O;
     }
 
     .difficile {
-        font-size: 12px; 
+        font-size: 10px; 
     }
-    .input-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-    }
-
-    .input-container input[type="email"],
-    .btn {
-        width: 70%; 
-        height: 44px;
-        font-size: 16px; 
-        margin-bottom: 10px; 
-    }
-
-    .input-container input[type="email"] {
-        max-width: 100%; 
-    }
-
-    
+      
     .row {
         flex-direction: column;
+        margin: 0;
     }
 
     .row > * {
@@ -673,7 +719,7 @@ form {
     }
 
     .row > img {
-        margin-top: 20px; 
+        margin-top: 10px; 
     }
 
     .custom {
@@ -694,11 +740,27 @@ form {
     .custom h3 {
         margin-left: 10px;
     }
-    
+    .custom img{
+        width: 50%;
+    }  
+
+    .icon{
+        display: block;
+    }
+
+    .input-container input[type="email"],
+    .btn {
+        width: 400px; 
+        height: 40px;
+        font-size: 12px; 
+        margin-bottom: 20px
+        
+    }
+  
+  
 }
 
-
-@media (min-width: 734px) and (max-width:1024px) {
+@media screen and (min-width: 734px) and (max-width: 1024px) {
     .custom,
     .container1,
     .row,
@@ -707,62 +769,116 @@ form {
         align-items: center;
     }
 
+    .exemple .icon { 
+        margin-top: -8px;
+    }
+
+    .row .icon { 
+        margin-top: -8px;
+    }
+
+ 
     .burger-menu,.custom.h3{
         display: flex;
+       
     }
+
+    .explore .btn {
+        font-size: 12px; 
+        width: 150px;
+        padding: 20px 20px 0px 0px;
+
+    }
+
+    .gallery .btn {
+        font-size: 12px; 
+        width: 150px;
+        padding: 20px 0px 0px 0px;
+
+    }
+
+    .exemple.icon{
+        padding: 10px 0px 0px 0px;
+
+    }
+
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .abonner {
+        flex-direction: column;
+        align-items: center;
+    }
+  
 
     .container1 {
         align-items: center;
         flex-direction: column;
         padding: 15px;
         text-align: center;
+        
+        
     }
 
     .row {
-        margin-bottom: 10px;
+        margin-bottom: 5px;
+        
     }
 
-    .input-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .exemple{
+       font-size:8px;
+       margin: 0;
+       padding: 0px 60px 0px 0px;
+       
+
+    }
+    
+    .lire {
+        font-weight: lighter;
+        color: #999;
+        font-size: 10px;
+      
     }
 
-    .input-container input[type="email"],
-    .btn,
-    .abonner,
-    .envoyer {
-        width: 88%; 
-        height: 44px; 
-        font-size: 16px; 
-        margin-bottom: 20px; 
-    }
-
-    .input-container input[type="email"] {
-        max-width: 100%;
+    .exemple-lire{
+        font-weight: lighter;
+        color: #999;
+        font-size: 10px;
+      
     }
 
     .container1 .section {
         margin-right: 0;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         flex-direction: column;
+        font-size: 12px;
     }
 
   
     .footer {
         padding: 10px;
+        font-size: 2px;
     }
 
     .project {
         width: 100%;
         margin-right: 0;
-    }
+    
 
+        
+    }
+    
+    .correct{
+        width: 1900px;
+         height: 480px; 
+    }
+    
     .project img {
         margin-bottom: 5px;
+        width: 50%;
     }
-
-    
 
     .nav ul li a {
         position: relative;
@@ -798,37 +914,23 @@ form {
     }
 
     .custom-heading {
-        font-size: 2rem; 
+        font-size: 1.50rem; 
+        font-size: 25px; 
+
     }
 
     .difficile-a-lire {
-        font-size: 16px; 
+        font-size: 11px; 
+        margin-bottom: O;
     }
 
     .difficile {
-        font-size: 12px; 
+        font-size: 10px; 
     }
-    .input-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-    }
-
-    .input-container input[type="email"],
-    .btn {
-        width: 70%; 
-        height: 44px;
-        font-size: 16px; 
-        margin-bottom: 10px; 
-    }
-
-    .input-container input[type="email"] {
-        max-width: 100%; 
-    }
-
-    
+      
     .row {
         flex-direction: column;
+        margin: 0;
     }
 
     .row > * {
@@ -836,7 +938,7 @@ form {
     }
 
     .row > img {
-        margin-top: 20px; 
+        margin-top: 10px; 
     }
 
     .custom {
@@ -857,7 +959,26 @@ form {
     .custom h3 {
         margin-left: 10px;
     }
-    
+    .custom img{
+        width: 50%;
+    }  
+
+    .icon{
+        display: block;
+    }
+
+    .input-container input[type="email"],
+    .btn {
+        width: 400px; 
+        height: 40px;
+        font-size: 12px; 
+        margin-bottom: 20px
+        
+    }
+  
+    .row .img{
+        width: 50%;
+    }
 }
 
 @media (min-width: 1024px){}
