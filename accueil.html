@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porfolio Paujula</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <link rel="stylesheet" href="https:cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -14,23 +13,20 @@
             <img src="img/Project21.ico" alt="Project21" style="width:30px;height:40px;padding: 5px;">
             <h3>Paujula</h3>
         </a>
-       
-        <header>
-            <div class="burger-menu">
-                <input type="checkbox" id="check">
-                <span class="icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
-            </div>
-            <nav id="menu">
-            <ul class="menu-list">
-                    <li><a href="accueil.html" class="active">Accueil</a></li>
-                    <li><a href="accueil.html" class="active">A propos</a></li>
-                    <li><a href="accueil.html" class="active">Services</a></li>
-                    <li><a href="accueil.html" class="active">Projets</a></li>
-                    <li><a href="accueil.html" class="active">Contact</a></li>
-                </ul>
+        
+           <nav>
+                <div class="openMenu"><span class="icon"><i class="fa fa-bars" aria-hidden="true"></i></span></div>                         
+                <ul class="mainMenu">
+                        <li><a href="accueil.html">Accueil</a></li>
+                        <li><a href="accueil.html">A propos</a></li>
+                        <li><a href="accueil.html">Services</a></li>
+                        <li><a href="accueil.html">Projets</a></li>
+                        <li><a href="accueil.html">Contact</a></li>
+                        <div class="closeMenu"><i class="fa fa-times"></i></div>
+                       
+                    </ul>
             </nav>
-        </div>
-        </header>
+ 
 </div> 
 
     <div class="container">
@@ -247,6 +243,8 @@
       <h4 style="text-align: center; font-size: 10px;"> <span class="difficile"> © 2024 Tous droits reservés | Réalisé par AGOSSOU BODE Paujula</span></h4>
      </footer>
     </div>
+
+    <script src="./app.js"></script>
 </body>
 </html>
 

@@ -306,6 +306,10 @@ form {
     padding: 0px 0px 0px 600px;
 }
 
+.affiche{
+    display: block;
+}
+
 .inpute-container input {
     width: 76%;
     height: 35px;
@@ -326,9 +330,16 @@ form {
 }
 
 #menu.active {
-    display: block;
+    display: block; 
 }
  
+nav .openMenu .icon{
+    display: none;
+}
+
+nav .closeMenu{
+    display: none;
+}
 
 @media screen and (min-width: 220px) and (max-width: 480px) {
     .custom,
@@ -339,6 +350,10 @@ form {
         align-items: center;
     }
 
+    nav .openMenu .icon{
+        display: block;
+    }
+    
     .espace.btn{
         padding: 10px 15px;
     }
@@ -512,10 +527,6 @@ form {
         align-items: center;
     }
 
-    .burger-menu {
-        display: flex;
-        align-items: center;
-    }
 
     header {
         width: 70%; 
@@ -539,9 +550,34 @@ form {
         font-size: 12px; 
         margin-bottom: 20px; 
     }
-     
-}
+    
+    nav .mainMenu {
+        height: 100vh;
+        width: 200px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: yellow;
+        transition: top 1s ease;
+        display: none;
+    }
 
+    nav .mainMenu .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .openMenu{
+        display: block;
+    }
+    
+}  
 @media screen and (min-width: 480px) and (max-width: 734px) {
     .custom,
     .container1,
@@ -757,6 +793,31 @@ form {
         
     }
   
+    nav .mainMenu {
+        height: 100vh;
+        width: 200px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: yellow;
+        transition: top 1s ease;
+        display: none;
+    }
+
+    nav .mainMenu .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .openMenu{
+        display: block;
+    }
   
 }
 
@@ -777,6 +838,9 @@ form {
         margin-top: -8px;
     }
 
+    nav .openMenu{
+        display: block;
+    }
  
     .burger-menu,.custom.h3{
         display: flex;
@@ -978,6 +1042,36 @@ form {
   
     .row .img{
         width: 50%;
+    }
+
+    nav .openMenu .icon{
+        display: block;
+    }
+
+    nav .mainMenu {
+        height: 100vh;
+        width: 200px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: yellow;
+        transition: top 1s ease;
+        display: none;
+    }
+
+    nav .mainMenu .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .openMenu{
+        display: block;
     }
 }
 

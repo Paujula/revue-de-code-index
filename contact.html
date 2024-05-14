@@ -1,396 +1,252 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.custom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header {
-    color: black;
-    display: flex;
-    justify-content: flex-end;
-    padding: 20px;
-}
-
-header nav ul li a {
-    color: black;
-}
-
-header nav ul li a:hover {
-    color: blue;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav ul li {
-    display: inline;
-    margin-left: 20px;
-}
-
-nav ul li:first-child {
-    margin-left: 0;
-}
-
-nav ul li a {
-    color: black;
-    text-decoration: none;
-    transition: border-color 0.3s;
-}
-
-nav ul li a:hover {
-    border-bottom-color: #B089F4;
-}
-
-.container {
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.gallery {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-}
-
-.row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.custom-heading {
-    font-size: 3.25rem;
-    font-weight: bold;
-}
-
-.difficile-a-lire {
-    font-weight: lighter;
-    color: #999;
-    font-size: 19px;
-}
-
-.difficile {
-    font-size: 14px;
-}
-
-.project {
-    width: 290px;
-    margin-right: 20px;
-    justify-content: flex-start;
-}
-
-.project img {
-    width: 100%;
-    height: 110%;
-    max-height: 330px;
-    border-radius: 15px;
-    padding: 10px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #B089F4;
-    color: #fff;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-}
-
-.btn:hover {
-    background-color: #B089F4;
-}
-
-.explore {
-    text-align: right;
-    margin-top: 20px;
-}
-
-.explore .btn {
-    background-color: #5B21B6;
-    color: #fff;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-}
-
-.explore .btn:hover {
-    background-color: #B089F4;
-}
-
-.explore .btn span {
-    margin-left: 5px;
-}
-
-.exemple {
-    text-align: center;
-}
-
-.container1 {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background-color: whitesmoke;
-    padding: 5px;
-}
-
-.section {
-    margin-right: 20px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 5px;
-}
-
-ul.dasteen-list {
-    display: flex;
-}
-
-ul.dasteen-list li {
-    margin-right: 10px;
-    padding: 2px;
-}
-
-ul.dasteen-list li img {
-    max-width: 25px;
-    max-height: 25px;
-}
-
-footer {
-    background-color: whitesmoke;
-    padding: 20px;
-    text-align: center;
-}
-
-input[type="email"] {
-    padding: 17px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    height: 20px;
-    width: 500px;
-}
-
-.nom::after {
-    content: "la";
-    color: blue;
-}
-
-.btne {
-    display: inline-block;
-    padding: 1px 5px;
-    color: black;
-    text-decoration: none;
-}
-
-.btne:hover {
-    color: blue;
-}
-
-.input-container {
-    position: relative;
-    display: inline-block;
-}
-
-.input-container input {
-    padding-left: 30px;
-    width: 450px;
-    padding: 5px 5px 5px 39px;
-}
-
-.input-container .icon {
-    position: absolute;
-    left: 5px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #555;
-    padding: 2px 5px 5px 10px;
-}
-
-form {
-    display: flex;
-    text-align: center;
-}
-
-.input-container {
-    position: relative;
-    flex: 1;
-    margin-right: 10px;
-}
-
-.input-container input {
-    width: 96%;
-    height: 35px;
-}
-
-.btn {
-    flex-shrink: 0;
-    width: 120px;
-    height: 44px;
-}
-
-.espace {
-    padding: 5px 5px 5px 15px;
-}
-
-.abonner {
-    width: 450px;
-}
-
-.sectionne {
-    text-align: center;
-    font-family: Arial, sans-serif;
-    background-image: url('img/po22.avif');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: auto;
-    height: 600px;
-}
-
-.custom-heading {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-.diese {
-    color: blue;
-    font-size: 3.25rem;
-    font-weight: bold;
-}
-
-.section2 {
-    text-align: center;
-    display: flex;
-    margin-right: 50px;
-}
-
-.separer {
-    display: flex;
-    padding: 0px 0px 0px 600px;
-}
-
-.inpute-container input {
-    width: 76%;
-    height: 35px;
-}
-
-#check {
-    display: none;
-}
-
-#checkbt {
-    display: none;
-}
-
-@media screen and (min-width: 360px) and (max-width: 764px)  {
-    .custom,
-    .container1,
-    .row,
-    .gallery .row {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .container1 {
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .row {
-        margin-bottom: 10px;
-    }
-
-    .input-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .input-container input[type="email"] {
-        width: 100%;
-    }
-
-    .container1 .section {
-        margin-right: 0;
-        margin-bottom: 10px;
-        flex-direction: column;
-    }
-
-    .footer {
-        padding: 10px;
-    }
-
-    .project {
-        width: 100%;
-        margin-right: 0;
-    }
-
-    .project img {
-        margin-bottom: 5px;
-    }
-
-    .nav ul li a {
-        position: relative;
-        bottom: 64px;
-        font-size: 16px;
-    }
-
-    #check {
-        display: none;
-    }
-
-    #checkbt {
-        display: block;
-        cursor: pointer;
-    }
-
-    #checkbt img {
-        display: block;
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        right: 20px;
-        top: 20px;
-    }
-
-    nav ul li {
-        display: none;
-    }
-
-    nav ul li a {
-        font-size: 20px;
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio Paujula</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https:cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="custom">
+        <a href="accueil.html" style="display: flex; color: black;padding: 8px;text-decoration: none;">
+            <img src="img/Project21.ico" alt="Project21" style="width:30px;height:40px;padding: 5px;">
+            <h3>Paujula</h3>
+        </a>
+       
+        <header>
+            <div class="burger-menu">
+                <input type="checkbox" id="check">
+                <span class="icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+            </div>
+            <nav id="menu">
+            <ul class="menu-list">
+                    <li><a href="accueil.html" class="active">Accueil</a></li>
+                    <li><a href="accueil.html" class="active">A propos</a></li>
+                    <li><a href="accueil.html" class="active">Services</a></li>
+                    <li><a href="accueil.html" class="active">Projets</a></li>
+                    <li><a href="accueil.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        </header>
+</div> 
+
+    <div class="container">
+        <div style="display: flex; align-items: center;">
+            <div class="row">
+                <div>
+                <h1 class="custom-heading"> Salut, je suis Dasteen Front End Developpeur  </h1>
+                <h4> <span class="difficile-a-lire"> Je realise les interfaces graphique web et mobile. 
+                Ecrivez moi en dessous et nous pourrons travailler ensemble</h4></span>
+                <form action="accueil.html" method="post">
+                    <div class="input-container">
+                        <div class="envoyer">
+                            <input type="email" id="email" name="email" placeholder="Entrez votre e-mail" required><br>
+                             <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn">Envoyer</button>
+                </form>
+                
+                </div>
+                
+                <img src="img/Project0.png" alt="Projet 4" class="correct">
+            </div>
+       
+        </div>
+        
+        <div class="gallery">
+            <h1 style="text-align: center;">Projets Réalisés</h1>
+            <div class="row" >                      
+                    <div class="project">
+                        <img src="img/project1.png" alt="Projet 1">
+                        <div class="espace">
+                            <a href="accueil.html" style="text-decoration: none;"><strong>Site E-com</strong></a><br>
+                            <a href="accueil.html" class="btn">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="img/project2.png" alt="Projet 2">
+                        <div class="espace">
+                            <a href="accueil.html"style="text-decoration: none;"><strong>Site Marketing</strong></a><br>
+                            <a href="accueil.html" class="btn">Voir le projet</a>
+                        </div>
+                    </div>                                       
+                    <div class="project">
+                        <img src="img/project3.png" alt="Projet 3">
+                        <div class="espace">
+                            <a href="accueil.html"style="text-decoration: none;"><strong>Portfolio Pro</strong></a><br>
+                            <a href="accueil.html" class="btn">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="img/project4.jpg" alt="Projet 4">
+                        <div class="espace">
+                            <a href="accueil.html"style="text-decoration: none;"><strong>Site de restauration</strong></a><br>
+                            <a href="accueil.html" class="btn">Voir le projet</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="project">
+                    <img src="img/project5.png" alt="Projet 5">
+                    <div class="espace">
+                        <a href="accueil.html"style="text-decoration: none;"><strong>Site Branding</strong></a><br>
+                        <a href="accueil.html" class="btn">Voir le projet</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/project6.jpg" alt="Projet 6">
+                    <div class="espace">
+                        <a href="accueil.html"style="text-decoration: none;"><strong>Site Agence Marketing</strong></a><br>
+                        <a href="accueil.html" class="btn">Voir le projet</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/project7.jpg" alt="Projet 7">
+                    <div class="espace">
+                        <a href="accueil.html"style="text-decoration: none;"><strong>Site Produit cosmetic</strong></a><br>
+                        <a href="accueil.html" class="btn">Voir le projet</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/project8.png" alt="Projet 8">
+                    <div class="espace">
+                        <a href="accueil.html"style="text-decoration: none;"><strong>Design</strong></a><br>
+                        <a href="accueil.html" class="btn">Voir le projet</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="project">
+                    <img src="img/project9.png" alt="Projet 9">
+                    <div class="espace">
+                        <a href="accueil.html"style="text-decoration: none;"><strong>Site Voyage</strong></a><br>
+                        <a href="accueil.html" class="btn">Voir le projet</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/project10.jpg" alt="Projet 10">
+                    <div class="espace">
+                        <a href="accueil.html"style="text-decoration: none;"><strong>Portfolio Photograph</strong></a><br>
+                        <a href="accueil.html" class="btn">Voir le projet</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/project11.jpg" alt="Projet 11">
+                    <div class="espace">
+                        <a href="accueil.html"style="text-decoration: none;"><strong>Ecom Branding</strong></a><br>
+                        <a href="accueil.html" class="btn">Voir le projet</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/project12.png" alt="Projet 12">
+                    <div>
+                        <a href="accueil.html"style="text-decoration: none;"><strong>Site Ecom</strong></a><br>
+                        <a href="accueil.html" class="btn">Voir le projet</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="project">
+                    <img src="img/project13.png" alt="Projet 13">
+                    <div class="espace">
+                        <a href="accueil.html"style="text-decoration: none;"><strong>Site Agence Immobilière</strong></a><br>
+                        <a href="accueil.html" class="btn">Voir le projet</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/project14.jpg" alt="Projet 14">
+                    <div class="espace">
+                        <a href="accueil.html"style="text-decoration: none;"><strong>Front End Design minimaliste</strong></a><br>
+                        <a href="accueil.html" class="btn">Voir le projet</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/project15.png" alt="Projet 15">
+                    <div class="espace">
+                        <a href="accueil.html"style="text-decoration: none;"><strong>Front End Design</strong></a><br>
+                        <a href="accueil.html" class="btn">Voir le projet</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/project16.png" alt="Projet 16">
+                    <div class="espace">
+                        <a href="accueil.html"style="text-decoration: none;"><strong>Portfolio Agence</strong></a><br>
+                        <a href="accueil.html" class="btn">Voir le projet</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="explore">
+        <a href="accueil.html" class="btn">Explorer plus <span>&rarr;</span></a>
+    </div>
+    <div class="exemple" >
+        <h1 class="custom-heading">Abonnez vous a notre newsletter</h1>
+        <h3 style="font-size: 30px;"><span class="lire">Restez informer des dernieres modification, des derniers articles sur notre site. <br>
+        l'abonnement est gratuit. Vous avez juste qu'a mettre votre email ici</span></h3>
     
-    .custom {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
+        
+        <div class="input-container">
+            <div>
+                <input type="email" id="email" name="email" placeholder="Entrez votre e-mail" required><br>
+                <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+            </div>
+        </div>
+        <button type="submit" class="btn">S'abonner</button>
+        <h6><span class="exemple-lire"> Nous portons une attention particuliere a le protection de vos donnees.</span><a href="accueil.html" style="color: blue; font-size: 15px;text-decoration: none;">Privacy Policy.</a> </h6>
 
-    .custom h3 {
-        margin-right: auto;
-    }
+     </div>
+     <div class="changer">
+     <div class="container1">
 
-    #checkbt {
-        display: block;
-        cursor: pointer;
-        margin-left: auto;
-    }
-}
+        <div class="section">
+          <h2 class="nom">Pauju</h2>
+          <ul class="dasteen-list"> 
+            <li><a href="accueil.html" class="btne"><img src="img/Project17.png" alt="Project 17"></a></li>
+            <li><a href="accueil.html" class="btne"><img src="img/Project18.jpg" alt="Project 18"></a></li>
+            <li><a href="accueil.html" class="btne"><img src="img/Project19.png" alt="Project 19"></a></li>
+            <li><a href="accueil.html" class="btne"><img src="img/Project20.jpg" alt="Project 20"></a></li>
+          </ul>
+        </div>
+        <div class="section">
+          <h2>Service</h2>
+          <ul>
+            <li><a href="accueil.html" class="btne">Dev web</a></li>
+            <li><a href="accueil.html" class="btne">Web Master</a></li>
+            <li><a href="accueil.html" class="btne">Design</a></li>
+            <li><a href="accueil.html" class="btne">Conception de Logo</a></li>
+          </ul>
+        </div>
+        <div class="section">
+          <h2>Page</h2>
+          <ul >
+            <li><a href="accueil.html" class="btne">Acceuil</a></li>
+            <li><a href="accueil.html" class="btne">Services</a></li>
+            <li><a href="accueil.html" class="btne">Projets</a></li>
+            <li><a href="accueil.html" class="btne">Pricing</a></li>
+            <li><a href="accueil.html" class="btne">Faire un Devis</a></li>
+          </ul>
+        </div>
+        <div class="section">
+          <h2>Support</h2>
+          <ul>
+            <li><a href="accueil.html" class="btne">Contact</a></li>
+            <li><a href="accueil.html" class="btne">Email</a></li>
+            <li><a href="accueil.html" class="btne">LinkedIn</a></li>
+            <li><a href="accueil.html" class="btne">Facebook</a></li>
+            <li><a href="accueil.html" class="btne">Youtube</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <footer>
+      <h4 style="text-align: center; font-size: 10px;"> <span class="difficile"> © 2024 Tous droits reservés | Réalisé par AGOSSOU BODE Paujula</span></h4>
+     </footer>
+    </div>
+</body>
+</html>
+
