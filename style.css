@@ -815,7 +815,7 @@ form {
   
 }
 
-@media screen and (min-width: 734px) and (max-width: 1024px) {
+ @media screen and (min-width: 734px) and (max-width: 1024px) {
     .custom,
     .container1,
     .row,
@@ -830,12 +830,6 @@ form {
 
     .row .icon { 
         margin-top: -8px;
-    }
-
- 
-    .burger-menu,.custom.h3{
-        display: flex;
-       
     }
 
     .explore .btn {
@@ -917,21 +911,13 @@ form {
         font-size: 2px;
     }
 
-    .project {
-        width: 100%;
-        margin-right: 0;
-    
-
-        
-    }
-    
     .correct{
         width: 1900px;
          height: 480px; 
     }
     
     .project img {
-        margin-bottom: 5px;
+       
         width: 50%;
     }
 
@@ -939,25 +925,6 @@ form {
         position: relative;
         bottom: 64px;
         font-size: 16px;
-    }
-
-    
-    #check {
-        display: none;
-    }
-
-    #checkbt {
-        display: block;
-        cursor: pointer;
-    }
-
-    #checkbt img {
-        display: block;
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        right: 20px;
-        top: 20px;
     }
 
     nav ul li {
@@ -1002,15 +969,6 @@ form {
         align-items: center;
     }
 
-    .burger-menu {
-        display: flex;
-        align-items: center;
-    }
-
-    header {
-        width: 70%; 
-    }
-
     .custom h3 {
         margin-left: 10px;
     }
@@ -1031,11 +989,63 @@ form {
         
     }
   
-    .row .img{
-        width: 50%;
+
+    .row h1,h4 {
+        text-align: center;
     }
 
-   
+    nav .mainMenu .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .openMenu{
+        display: block;
+    }
+
+    nav .mainMenu{
+        height: 1000px;
+        width: 700px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        transition: top 1s ease;
+        display: none;
+        margin-bottom: 10px;
+        
+    }
+
+
+    nav .mainMenu li{
+        display: block;
+        top: 20px;
+        right: 20px;
+       
+    }
+
+    nav .mainMenu li a{
+    color: white;
+       font-size: 3rem;
+    }
+
+  
+    nav .mainMenu .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .openMenu{
+        display: block;
+    }
 }
 
 @media (min-width: 1024px){}
