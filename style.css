@@ -10,39 +10,57 @@ body {
     align-items: center;
 }
 
-header {
-    color: black;
+nav{
     display: flex;
-    justify-content: flex-end;
-    padding: 20px;
+    justify-content: space-between;
 }
 
-header nav ul li a {
+nav .mainMenu{
+    display: flex;
+    list-style: none;
+    
+}
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
     color: black;
+    font-size: 0.75rem;
 }
 
-header nav ul li a:hover {
+nav .mainMenu li a:hover{
+    background: rgb 255,94,0;
+}
+
+nav .openMenu{
+    font-size: 1rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .mainMenu .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.fa-download:hover{color: rgb(0, 110, 255);}
+.fa-desktop{color: rgb(86,154,243);}
+.fa-microphone{color: rgb(255,0,191);}
+.fa-music{color: rgb(255,123,0);}
+
+
+
+
+nav ul li a:hover {
     color: blue;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav ul li {
-    display: inline;
-    margin-left: 20px;
-}
-
-nav ul li:first-child {
-    margin-left: 0;
-}
-
 nav ul li a {
-    color: black;
+    color: white;
     text-decoration: none;
     transition: border-color 0.3s;
 }
@@ -92,6 +110,33 @@ nav ul li a:hover {
     color: #999;
     font-size: 14px;
   
+}
+
+.section {
+    margin-right: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+ul.dasteen-list {
+    display: flex;
+}
+
+ul.dasteen-list li {
+    margin-right: 10px;
+    padding: 2px;
+}
+
+ul.dasteen-list li img {
+    max-width: 25px;
+    max-height: 25px;
 }
 
 .difficile {
@@ -165,24 +210,6 @@ nav ul li a:hover {
 
 .section {
     margin-right: 20px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 5px;
-}
-
-ul.dasteen-list {
-    display: flex;
-}
-
-ul.dasteen-list li {
-    margin-right: 10px;
-    padding: 2px;
 }
 
 ul.dasteen-list li img {
@@ -306,21 +333,10 @@ form {
     padding: 0px 0px 0px 600px;
 }
 
-.affiche{
-    display: block;
-}
 
 .inpute-container input {
     width: 76%;
     height: 35px;
-}
-
-#check {
-    display: none;
-}
-
-#checkbt {
-    display: none;
 }
 
 
@@ -329,17 +345,6 @@ form {
      height: 350px; 
 }
 
-#menu.active {
-    display: block; 
-}
- 
-nav .openMenu .icon{
-    display: none;
-}
-
-nav .closeMenu{
-    display: none;
-}
 
 @media screen and (min-width: 220px) and (max-width: 480px) {
     .custom,
@@ -349,11 +354,7 @@ nav .closeMenu{
         flex-direction: column;
         align-items: center;
     }
-
-    nav .openMenu .icon{
-        display: block;
-    }
-    
+  
     .espace.btn{
         padding: 10px 15px;
     }
@@ -364,11 +365,6 @@ nav .closeMenu{
 
     .row .icon { 
         margin-top: -8px;
-    }
-
-    .burger-menu,.custom.h3{
-        display: flex;
-       
     }
 
     .explore .btn {
@@ -430,6 +426,15 @@ nav .closeMenu{
       
     }
 
+    nav .mainMenu li a {
+        display: inline-block;
+        padding: 15px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-size: 1.75rem;
+    }
+
     .container1 .section {
         margin-right: 0;
         margin-bottom: 5px;
@@ -458,39 +463,6 @@ nav .closeMenu{
     
     .project img {
         margin-bottom: 5px;
-    }
-
-    .nav ul li a {
-        position: relative;
-        bottom: 64px;
-        font-size: 16px;
-    }
-
-    
-    #check {
-        display: none;
-    }
-
-    #checkbt {
-        display: block;
-        cursor: pointer;
-    }
-
-    #checkbt img {
-        display: block;
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        right: 20px;
-        top: 20px;
-    }
-
-    nav ul li {
-        display: none;
-    }
-
-    nav ul li a {
-        font-size: 20px;
     }
 
     .custom-heading {
@@ -527,11 +499,6 @@ nav .closeMenu{
         align-items: center;
     }
 
-
-    header {
-        width: 70%; 
-    }
-
     .custom h3 {
         margin-left: 10px;
     }
@@ -550,10 +517,10 @@ nav .closeMenu{
         font-size: 12px; 
         margin-bottom: 20px; 
     }
-    
-    nav .mainMenu {
-        height: 100vh;
-        width: 200px;
+  
+    nav .mainMenu{
+        height: 600px;
+        width: 260px;
         position: fixed;
         top: 0;
         left: 0;
@@ -561,10 +528,13 @@ nav .closeMenu{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: yellow;
+        background: black;
         transition: top 1s ease;
         display: none;
+        margin-bottom: 10px;
+        
     }
+
 
     nav .mainMenu .closeMenu{
         display: block;
@@ -577,6 +547,7 @@ nav .closeMenu{
         display: block;
     }
     
+   
 }  
 @media screen and (min-width: 480px) and (max-width: 734px) {
     .custom,
@@ -793,9 +764,21 @@ nav .closeMenu{
         
     }
   
-    nav .mainMenu {
-        height: 100vh;
-        width: 200px;
+  
+    nav .mainMenu .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .openMenu{
+        display: block;
+    }
+
+    nav .mainMenu{
+        height: 700px;
+        width: 450px;
         position: fixed;
         top: 0;
         left: 0;
@@ -803,9 +786,18 @@ nav .closeMenu{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: yellow;
+        background: black;
         transition: top 1s ease;
         display: none;
+        margin-bottom: 10px;
+        
+    }
+
+
+    nav .mainMenu li{
+        display: block;
+        top: 20px;
+        right: 20px;
     }
 
     nav .mainMenu .closeMenu{
@@ -818,6 +810,8 @@ nav .closeMenu{
     nav .openMenu{
         display: block;
     }
+    
+  
   
 }
 
@@ -838,9 +832,6 @@ nav .closeMenu{
         margin-top: -8px;
     }
 
-    nav .openMenu{
-        display: block;
-    }
  
     .burger-menu,.custom.h3{
         display: flex;
@@ -1044,35 +1035,7 @@ nav .closeMenu{
         width: 50%;
     }
 
-    nav .openMenu .icon{
-        display: block;
-    }
-
-    nav .mainMenu {
-        height: 100vh;
-        width: 200px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 10;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: yellow;
-        transition: top 1s ease;
-        display: none;
-    }
-
-    nav .mainMenu .closeMenu{
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
-
-    nav .openMenu{
-        display: block;
-    }
+   
 }
 
 @media (min-width: 1024px){}
